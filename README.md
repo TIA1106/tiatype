@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ✍️ TiaType – Full-Stack AI-Powered Long-Form Writing Platform
 
-## Getting Started
+**TiaType** is a full-stack, distraction-free writing app designed for students, bloggers, and content creators.  
+It combines clean frontend design with an intelligent AI backend that enhances grammar in real-time using LLMs via LangChain.
 
-First, run the development server:
+Built during a personal 15-Day AI Sprint, it reflects the power of practical AI + web development coming together.
+
+---
+
+## 🚀 Features
+
+- 📝 Long-form writing editor with auto-expanding textarea
+- 🤖 Real-time grammar improvement using OpenAI or HuggingFace (via LangChain)
+- 💾 Auto-save drafts to browser `localStorage`
+- 🧠 Backend powered by Node.js + Express + MongoDB
+- 📊 Optional: Save entries to MongoDB for session/analytics
+- 📂 Easily extendable to include login, export to PDF, or cloud sync
+- 🔐 Environment-based secure key loading for OpenAI
+
+---
+
+## 🧠 Tech Stack
+
+| Layer       | Technology                          |
+|-------------|-------------------------------------|
+| Frontend    | HTML, CSS, JavaScript               |
+| Dev Server  | Vite                                |
+| AI Layer    | LangChain + OpenAI    |
+| Backend     | Node.js, Express                    |
+| Database    | MongoDB (Mongoose)                  |
+| Styling     |  ( Tailwind)  |
+
+
+---
+
+---
+
+## 🛠️ How to Run Locally (Full Stack)
+
+> 📦 Requires: Node.js ≥ 16.x and npm
+
+### 🔧 1. Clone the repo
 
 ```bash
+git clone https://github.com/TIA1106/tiatype.git
+cd tiatype
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+🙋‍♀️ Why I Built This
+I wanted a writing app that didn’t distract me, but also helped me improve.
+So I built TiaType — a smart writing environment backed by modern AI.
+It’s more than a frontend toy — it taught me LangChain, OpenAI integration, MongoDB, and building a clean user experience.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This is my journey into serious full-stack development with AI.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+👩‍💻 Author
+Tia Sukhnanni
+🎓 BTech @ JKLU Jaipur
+💻 Full Stack & AI Developer
