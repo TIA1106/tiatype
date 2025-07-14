@@ -32,7 +32,28 @@ Built during a personal 15-Day AI Sprint, it reflects the power of practical AI 
 
 
 ---
+## ⚠️ Known Limitation: API Key Issues
 
+This project uses OpenRouter API (free tier). Sometimes you may experience:
+
+- `401 No Auth Credentials` errors
+- AI features not working
+- Random failures after pushing to GitHub
+
+### 🔑 Why This Happens
+- Free API keys can **expire**, be **revoked**, or hit **rate limits**
+- `.env.local` is required and must have a working key
+- The project does NOT ship with a production-grade API key
+
+### ✅ How to Fix It
+1. Create `.env.local` file in root
+2. Add your own valid OpenRouter API key:
+```env
+OPENROUTER_API_KEY=your_key_here
+3.
+Restart your dev server
+
+⚠️ Tip: You can get a new free key from https://openrouter.ai
 ---
 
 ## 🛠️ How to Run Locally (Full Stack)
